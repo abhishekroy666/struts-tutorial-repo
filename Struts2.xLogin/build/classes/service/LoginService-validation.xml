@@ -1,0 +1,25 @@
+<!DOCTYPE validators PUBLIC 
+  		"-//Apache Struts//XWork Validator 1.0.2//EN"
+  		"http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="lb.name">
+		<field-validator type="requiredstring">
+			<message>Username is Required from XML</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">2</param>
+			<param name="maxLength">4</param>
+			<message>User Name must be between 2 and 4 characters</message>
+		</field-validator>
+	</field>
+	<field name="lb.pass">
+		<field-validator type="requiredstring">
+			<message>Password is Required from XML</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">2</param>
+			<param name="maxLength">4</param>
+			<message>Password must be between 2 and 4 characters</message>
+		</field-validator>
+	</field>
+</validators>
